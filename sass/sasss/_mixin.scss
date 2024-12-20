@@ -1,0 +1,17 @@
+
+
+@mixin function{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin sameproperty($par1){
+    color: purple;
+    font-size: 5rem+5rem; //operator +,-,/,*
+    letter-spacing: $par1;
+    text-transform: capitalize
+}

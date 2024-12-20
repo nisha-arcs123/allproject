@@ -1,0 +1,27 @@
+$main-color: #c8deff;
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: $main-color;
+    max-width: 280px;
+    padding: 20px;
+    line-height: 24px;
+    margin: 4px;
+    position: relative;
+}
+
+.img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 5px solid white;
+    position: absolute;
+    right: -30px;
+    bottom: 110px;
+}

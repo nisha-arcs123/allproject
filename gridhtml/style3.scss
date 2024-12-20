@@ -1,0 +1,339 @@
+.outer-container {
+  width: 100%;
+  margin: -7px;
+  padding: 0px;
+  display: flex;
+  font-family: "Roboto";
+  .sidebar-container {
+    width: 50px;
+    height: 100vh;
+    background-color: rgba(43, 48, 59, 1);
+    position: relative;
+    z-index: 1;
+    margin-left: -1px;
+    .imgContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .line {
+        width: 50px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 10px;
+      }
+      .logo {
+        margin-top: 15px;
+        margin-left: 10px;
+        display: flex;
+        gap: 10px;
+      }
+      .home,
+      .mask,
+      .aws {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        margin-top: 8px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+      }
+      .home {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      .mask {
+        background-color: rgba(255, 255, 255, 1);
+      }
+      .aws {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+      }
+    }
+  }
+  .sidebar-container:hover {
+    width: 169px;
+    transition: width 0.1s;
+    .imgContainer {
+      .line {
+        width: 169px;
+      }
+      .logo::after {
+        content: "Search Portal";
+        font-size: 15px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        align-items: center;
+        display: flex;
+      }
+
+      .home,
+      .mask,
+      .aws {
+        width: 145px;
+        padding-left: 8px;
+        align-items: center;
+        display: flex;
+        justify-content: start;
+        font-size: 13px;
+        font-weight: 400;
+        gap: 10px;
+        color: rgba(255, 255, 255, 1);
+      }
+      .home::after {
+        content: "| Search";
+      }
+      .mask::after {
+        content: "| ASOR";
+        color: black;
+      }
+      .aws::after {
+        content: "| AWS Config";
+      }
+    }
+  }
+  .inner-container {
+    width: calc(100% - 50px);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      height: 54px;
+      padding-right: 10px;
+      .left-header {
+        display: flex;
+        align-items: center;
+        margin: 0px 38px;
+        gap: 7px;
+        span {
+          width: 1px;
+          height: 20px;
+          background-color: rgba(217, 217, 217, 1);
+        }
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          color: rgba(161, 161, 164, 1);
+        }
+      }
+      .right-header {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        p {
+          color: rgba(43, 48, 59, 1);
+          font-size: 12px;
+          font-weight: 500;
+          margin-right: 6px;
+        }
+      }
+    }
+    .hrline {
+      border-top: 1px solid rgba(232, 232, 236, 1);
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    .tab-container {
+      //   height: 41px;
+      padding-right: 10px;
+      .tabs {
+        margin-left: 24px;
+        // height: 50px;
+        display: flex;
+        align-items: center;
+        .tab-button {
+          font-size: 16px;
+          font-weight: 600;
+          border: none;
+          background-color: #ffff;
+          padding: 11px 16px;
+          color: rgba(50, 50, 56, 0.5);
+        }
+        .tab-button:hover {
+          background: rgba(244, 244, 244, 1);
+          color: rgba(50, 50, 56, 0.5);
+          height: 41px;
+        }
+      }
+      .tab-content {
+        display: none;
+        .tabs2 {
+          // height: 50px;
+          display: flex;
+          align-items: center;
+          background-color: rgba(244, 244, 244, 1);
+          .tab-button {
+            font-size: 15px;
+            font-weight: 500;
+            border: none;
+            background-color: rgba(244, 244, 244, 1);
+            padding: 11px 36px;
+            color: rgba(50, 50, 56, 0.5);
+          }
+          .tab-button:hover {
+            background: white;
+            color: rgba(50, 50, 56, 0.5);
+            height: 41px;
+          }
+        }
+        .tab-content2{
+            display: none;
+        }
+        .active{
+            display: block;
+        }
+      }
+
+      .active {
+        display: block;
+      }
+    }
+    table {
+      min-width: 1160px;
+      border-collapse: collapse;
+      width: 100%;
+      tbody {
+        width: 100%;
+        display: table;
+        .theader {
+          background-color: #ffff;
+          height: 29px;
+          .centerHeader {
+            // padding-left: 60px;
+            text-align: center;
+          }
+          th {
+            font-size: 12px;
+            font-weight: 600;
+            color: rgba(50, 50, 56, 1);
+            line-height: 14px;
+            text-align: start;
+          }
+        }
+        tr {
+          height: 38px;
+          border-bottom: 1px solid rgba(240, 243, 246, 1);
+          td.center {
+            // padding-left: 60px;
+            text-align: center;
+            padding-right: 31px;
+          }
+          td {
+            text-align: start;
+            font-size: 13px;
+            font-weight: 400;
+            color: rgba(103, 104, 121, 1);
+            .container {
+              display: flex;
+              gap: 15px;
+              align-items: center;
+              justify-content: start;
+              margin-left: 10px;
+              margin-right: -47px;
+              input[type="checkbox"] {
+                width: 20px;
+                height: 20px;
+                border: 1px solid rgba(43, 48, 59, 0.1);
+                // -moz-appearance:none;
+                -webkit-appearance: none;
+                -o-appearance: none;
+                border-radius: 5px;
+              }
+              .circle {
+                background-color: rgba(69, 123, 130, 1);
+                color: white;
+                border-radius: 50%;
+                width: 10px;
+                height: 20px;
+                padding: 5px 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 13px;
+                font-weight: 500;
+              }
+              .rectangle {
+                background-color: rgba(255, 131, 88, 1);
+              }
+              .square {
+                background-color: rgba(51, 158, 205, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bottomContainer {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(103, 104, 121, 1);
+      gap: 20px;
+      padding: 10px 24px;
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      width: calc(100% - 100px);
+      background-color: rgba(255, 255, 255, 1);
+      select.dropdown {
+        width: 50px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 5px;
+        // border: none;
+        background-color: white;
+        // margin-right: 10px;
+        border: 1px solid rgba(130, 124, 149, 1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .outer-container {
+    .inner-container {
+      .header {
+        .left-header {
+          margin-left: 17px;
+          p {
+            font-size: 10px;
+          }
+        }
+        .right-header {
+          p {
+            display: none;
+          }
+        }
+      }
+      .asorContainer {
+        .txt {
+          margin-left: 17px;
+        }
+        .rightBar {
+          margin-top: 6px;
+          .fav {
+            // background-color: #2b303b0d;
+            padding: 0px 5px;
+            border-radius: 4px;
+            height: 29px;
+          }
+        }
+      }
+      .bottomContainer {
+        gap: 10px;
+        padding: 10px;
+        width: calc(100% - 70px);
+        p {
+          margin-left: 10px;
+        }
+        select.dropdown {
+          width: 50px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}

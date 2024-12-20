@@ -1,0 +1,297 @@
+.outer-container {
+  width: 100%;
+  margin: -7px;
+  padding: 0px;
+  display: flex;
+  font-family: "Roboto";
+}
+.outer-container .sidebar-container {
+  width: 50px;
+  height: 100vh;
+  background-color: rgb(43, 48, 59);
+  position: relative;
+  z-index: 1;
+  margin-left: -1px;
+}
+.outer-container .sidebar-container .imgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.outer-container .sidebar-container .imgContainer .line {
+  width: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+}
+.outer-container .sidebar-container .imgContainer .logo {
+  margin-top: 15px;
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+}
+.outer-container .sidebar-container .imgContainer .home,
+.outer-container .sidebar-container .imgContainer .mask,
+.outer-container .sidebar-container .imgContainer .aws {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+.outer-container .sidebar-container .imgContainer .home {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.outer-container .sidebar-container .imgContainer .mask {
+  background-color: rgb(255, 255, 255);
+}
+.outer-container .sidebar-container .imgContainer .aws {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+.outer-container .sidebar-container:hover {
+  width: 169px;
+  transition: width 0.1s;
+}
+.outer-container .sidebar-container:hover .imgContainer .line {
+  width: 169px;
+}
+.outer-container .sidebar-container:hover .imgContainer .logo::after {
+  content: "Search Portal";
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  display: flex;
+}
+.outer-container .sidebar-container:hover .imgContainer .home,
+.outer-container .sidebar-container:hover .imgContainer .mask,
+.outer-container .sidebar-container:hover .imgContainer .aws {
+  width: 145px;
+  padding-left: 8px;
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  font-size: 13px;
+  font-weight: 400;
+  gap: 10px;
+  color: rgb(255, 255, 255);
+}
+.outer-container .sidebar-container:hover .imgContainer .home::after {
+  content: "| Search";
+}
+.outer-container .sidebar-container:hover .imgContainer .mask::after {
+  content: "| ASOR";
+  color: black;
+}
+.outer-container .sidebar-container:hover .imgContainer .aws::after {
+  content: "| AWS Config";
+}
+.outer-container .inner-container {
+  width: calc(100% - 50px);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+.outer-container .inner-container .header {
+  display: flex;
+  justify-content: space-between;
+  height: 54px;
+  padding-right: 10px;
+}
+.outer-container .inner-container .header .left-header {
+  display: flex;
+  align-items: center;
+  margin: 0px 38px;
+  gap: 7px;
+}
+.outer-container .inner-container .header .left-header span {
+  width: 1px;
+  height: 20px;
+  background-color: rgb(217, 217, 217);
+}
+.outer-container .inner-container .header .left-header p {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(161, 161, 164);
+}
+.outer-container .inner-container .header .right-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.outer-container .inner-container .header .right-header p {
+  color: rgb(43, 48, 59);
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+}
+.outer-container .inner-container .hrline {
+  border-top: 1px solid rgb(232, 232, 236);
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.outer-container .inner-container .asorContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 41px;
+  padding-right: 10px;
+}
+.outer-container .inner-container .asorContainer .txt {
+  margin-left: 24px;
+}
+.outer-container .inner-container .asorContainer .txt p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.outer-container .inner-container .asorContainer .rightBar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.outer-container .inner-container .asorContainer .rightBar .btnStyle {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgb(43, 48, 59);
+  border-radius: 5px;
+  height: 29px;
+}
+.outer-container .inner-container .asorContainer .rightBar .fav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.outer-container .inner-container .asorContainer .rightBar .fav p {
+  font-size: 12px;
+  display: block;
+  font-weight: 600;
+  color: rgb(50, 50, 56);
+}
+.outer-container .inner-container table {
+  min-width: 1160px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.outer-container .inner-container table tbody {
+  width: 100%;
+  display: table;
+}
+.outer-container .inner-container table tbody .theader {
+  background-color: rgba(164, 164, 164, 0.1);
+  height: 29px;
+}
+.outer-container .inner-container table tbody .theader .centerHeader {
+  padding-left: 60px;
+}
+.outer-container .inner-container table tbody .theader th {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(50, 50, 56);
+  line-height: 14px;
+  text-align: start;
+}
+.outer-container .inner-container table tbody tr {
+  height: 38px;
+  border-bottom: 1px solid rgb(240, 243, 246);
+}
+.outer-container .inner-container table tbody tr td {
+  text-align: start;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(103, 104, 121);
+}
+.outer-container .inner-container table tbody tr td .container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: start;
+  margin-left: 10px;
+  margin-right: -47px;
+}
+.outer-container .inner-container table tbody tr td .container input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(43, 48, 59, 0.1);
+  -webkit-appearance: none;
+  -o-appearance: none;
+  border-radius: 5px;
+}
+.outer-container .inner-container table tbody tr td .container .circle {
+  background-color: rgb(69, 123, 130);
+  color: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 20px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+}
+.outer-container .inner-container table tbody tr td .container .rectangle {
+  background-color: rgb(255, 131, 88);
+}
+.outer-container .inner-container table tbody tr td .container .square {
+  background-color: rgb(51, 158, 205);
+}
+.outer-container .inner-container .bottomContainer {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(103, 104, 121);
+  gap: 20px;
+  padding: 10px 24px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: calc(100% - 100px);
+  background-color: rgb(255, 255, 255);
+}
+.outer-container .inner-container .bottomContainer select.dropdown {
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid rgb(130, 124, 149);
+}
+
+@media screen and (max-width: 500px) {
+  .outer-container .inner-container .header .left-header {
+    margin-left: 17px;
+  }
+  .outer-container .inner-container .header .left-header p {
+    font-size: 10px;
+  }
+  .outer-container .inner-container .header .right-header p {
+    display: none;
+  }
+  .outer-container .inner-container .asorContainer .txt {
+    margin-left: 17px;
+  }
+  .outer-container .inner-container .asorContainer .rightBar {
+    margin-top: 6px;
+  }
+  .outer-container .inner-container .asorContainer .rightBar .fav {
+    padding: 0px 5px;
+    border-radius: 4px;
+    height: 29px;
+  }
+  .outer-container .inner-container .bottomContainer {
+    gap: 10px;
+    padding: 10px;
+    width: calc(100% - 70px);
+  }
+  .outer-container .inner-container .bottomContainer p {
+    margin-left: 10px;
+  }
+  .outer-container .inner-container .bottomContainer select.dropdown {
+    width: 50px;
+    height: 28px;
+  }
+}/*# sourceMappingURL=style.css.map */

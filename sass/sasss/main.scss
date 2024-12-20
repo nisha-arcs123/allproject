@@ -1,0 +1,39 @@
+@import "mixin";
+@import "var";
+// operator
+//variable
+//nesting
+//mixin
+//partials
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.main_header{
+    @include function;
+    background:$bgColor;
+    h1{
+        @include sameproperty(1.8rem);
+        &:hover{
+            color:azure;
+        }
+        &::after{
+            content: " Channel";
+        }
+        &::before{
+            content: "  helloooo ";
+        }
+    }
+    
+    p{
+        @include sameproperty(0.3rem);
+        &:hover{
+            color: black;
+        }
+    }
+}

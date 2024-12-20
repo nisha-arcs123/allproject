@@ -1,0 +1,284 @@
+.outer-container {
+  width: 100%;
+  margin: -7px;
+  padding: 0px;
+  display: flex;
+  font-family: "Roboto";
+}
+.outer-container .sidebar-container {
+  width: 50px;
+  height: 100vh;
+  background-color: rgb(43, 48, 59);
+  position: relative;
+  z-index: 1;
+  margin-left: -1px;
+}
+.outer-container .sidebar-container .imgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.outer-container .sidebar-container .imgContainer .line {
+  width: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+}
+.outer-container .sidebar-container .imgContainer .logo {
+  margin-top: 15px;
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+}
+.outer-container .sidebar-container .imgContainer .home,
+.outer-container .sidebar-container .imgContainer .mask,
+.outer-container .sidebar-container .imgContainer .aws {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+.outer-container .sidebar-container .imgContainer .home {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.outer-container .sidebar-container .imgContainer .mask {
+  background-color: rgb(255, 255, 255);
+}
+.outer-container .sidebar-container .imgContainer .aws {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+.outer-container .sidebar-container:hover {
+  width: 169px;
+  transition: width 0.1s;
+}
+.outer-container .sidebar-container:hover .imgContainer .line {
+  width: 169px;
+}
+.outer-container .sidebar-container:hover .imgContainer .logo::after {
+  content: "Search Portal";
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  display: flex;
+}
+.outer-container .sidebar-container:hover .imgContainer .home,
+.outer-container .sidebar-container:hover .imgContainer .mask,
+.outer-container .sidebar-container:hover .imgContainer .aws {
+  width: 145px;
+  padding-left: 8px;
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  font-size: 13px;
+  font-weight: 400;
+  gap: 10px;
+  color: rgb(255, 255, 255);
+}
+.outer-container .sidebar-container:hover .imgContainer .home::after {
+  content: "| Search";
+}
+.outer-container .sidebar-container:hover .imgContainer .mask::after {
+  content: "| ASOR";
+  color: black;
+}
+.outer-container .sidebar-container:hover .imgContainer .aws::after {
+  content: "| AWS Config";
+}
+.outer-container .inner-container {
+  width: calc(100% - 50px);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+.outer-container .inner-container .header {
+  display: flex;
+  justify-content: space-between;
+  height: 54px;
+  padding-right: 10px;
+}
+.outer-container .inner-container .header .left-header {
+  display: flex;
+  align-items: center;
+  margin: 0px 38px;
+  gap: 7px;
+}
+.outer-container .inner-container .header .left-header span {
+  width: 1px;
+  height: 20px;
+  background-color: rgb(217, 217, 217);
+}
+.outer-container .inner-container .header .left-header p {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(161, 161, 164);
+}
+.outer-container .inner-container .header .right-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.outer-container .inner-container .header .right-header p {
+  color: rgb(43, 48, 59);
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+}
+.outer-container .inner-container .hrline {
+  border-top: 1px solid rgb(232, 232, 236);
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.outer-container .inner-container .container {
+  padding: 20px;
+}
+.outer-container .inner-container .container .selectContainer {
+  background-color: rgb(246, 247, 251);
+  border-radius: 5px;
+  height: auto;
+  width: calc(99% - 10px);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.outer-container .inner-container .container .selectContainer .row1,
+.outer-container .inner-container .container .selectContainer .row2 {
+  display: flex;
+  gap: 14px;
+}
+.outer-container .inner-container .container .selectContainer .custom-select-box {
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  padding: 0px 10px;
+  color: rgb(147, 144, 162);
+  border-radius: 5px;
+  background-color: #fff;
+  padding-top: 7px;
+  position: relative;
+}
+.outer-container .inner-container .container .selectContainer .selectmenu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.outer-container .inner-container .container .selectContainer .downarrow {
+  border-left: 2px solid rgb(124, 118, 149);
+  border-bottom: 2px solid rgb(124, 118, 149);
+  width: 6px;
+  height: 6px;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 14px;
+}
+.outer-container .inner-container .container .selectContainer select {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(124, 118, 149);
+  appearance: none; /* Remove default dropdown arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  position: relative;
+}
+.outer-container .inner-container .container .selectContainer select option {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(147, 144, 162);
+  min-height: 42px;
+  background-color: #fff;
+  border: none;
+  padding: 14px;
+  outline: none;
+}
+.outer-container .inner-container .container .selectContainer select:focus {
+  outline: none;
+}
+.outer-container .inner-container .container .selectContainer label {
+  font-family: "Roboto";
+  font-size: 12px;
+  color: rgb(147, 144, 162);
+  font-weight: 400;
+  padding: 3px 0px;
+}
+.outer-container .inner-container .container .selectContainer .row3 {
+  display: flex;
+  justify-content: end;
+}
+.outer-container .inner-container .container .selectContainer .row3 button {
+  width: 100px;
+  background-color: rgb(0, 115, 234);
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  font-family: "Roboto";
+  padding: 10px 0px;
+}
+.outer-container .inner-container .container .recentSearch {
+  width: 100%;
+  margin-top: 40px;
+}
+.outer-container .inner-container .container .recentSearch .firstdiv {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(240, 243, 246);
+}
+.outer-container .inner-container .container .recentSearch .firstdiv p {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(46, 37, 89);
+}
+.outer-container .inner-container .container .recentSearch .firstdiv p span {
+  color: rgb(207, 207, 207);
+  margin-right: 10px;
+  font-size: 12px;
+}
+.outer-container .inner-container .container .recentSearch .seconddiv {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(240, 243, 246);
+}
+.outer-container .inner-container .container .recentSearch .seconddiv p {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(103, 104, 121);
+}
+
+@media screen and (max-width: 500px) {
+  .outer-container .inner-container .container .selectContainer {
+    width: calc(95% - 10px);
+  }
+  .outer-container .inner-container .container .selectContainer .row1,
+  .outer-container .inner-container .container .selectContainer .row2 {
+    flex-direction: column;
+  }
+  .outer-container .inner-container .container .selectContainer .row1 .custom-select-box,
+  .outer-container .inner-container .container .selectContainer .row2 .custom-select-box {
+    width: 91%;
+  }
+  .outer-container .inner-container .container .selectContainer .row3 {
+    width: 96%;
+  }
+  .outer-container .inner-container .container .selectContainer .row3 button {
+    width: 100%;
+  }
+  .outer-container .inner-container .container .recentSearch .seconddiv {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 458px) {
+  .outer-container .inner-container .header .right-header p {
+    display: none;
+  }
+}/*# sourceMappingURL=style2.css.map */

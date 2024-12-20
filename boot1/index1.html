@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Lightbox</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="gallery">
+    <img src="Img Chair (3).svg" alt="Image 1" onclick="openLightbox(); currentSlide(1)">
+    <img src="Img Lipstick.jpg" alt="Image 2" onclick="openLightbox(); currentSlide(2)">
+    <img src="Img Chair.jpg" alt="Image 3" onclick="openLightbox(); currentSlide(3)">
+    <!-- Add more images as needed -->
+</div>
+
+<!-- The Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+
+    <div class="lightbox-content">
+        <div class="lightbox-slide">
+            <img src="Img Chair (3).svg" alt="Image 1">
+        </div>
+        <div class="lightbox-slide">
+            <img src="Img Lipstick.jpg" alt="Image 2">
+        </div>
+        <div class="lightbox-slide">
+            <img src="Img Chair.jpg" alt="Image 3">
+        </div>
+        <!-- Add more slides corresponding to the images -->
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

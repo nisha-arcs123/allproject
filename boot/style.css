@@ -1,0 +1,11 @@
+.box{
+    width: 300px;
+    height: 100px;
+    background-color: #6512;
+    
+}
+
+.second{
+    width: 200px;
+    transition: 0.3 ease-in-out;
+}

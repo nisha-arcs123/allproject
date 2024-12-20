@@ -1,0 +1,58 @@
+@import "./resets";
+@import "./variable";
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name );
+}
+
+
+@mixin flexCenter($direction){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin theme($light-theme:true){
+    @if $light-theme{
+        background: lighten($primary-color,100%);
+        color: darken(map-get($text-colors,"pink"),100%)
+    }
+}
+
+@mixin mobile(){
+    @media (max-width:$mobile){
+        @content;
+    }
+}
+body{
+    background: $primary-color;
+    color:map-get($text-colors,"white");
+    font-family: $font-family;
+}
+
+.main{
+    width: 80%-40%;
+    // width: calc(80%-40%);
+    @include flexCenter(row);
+    margin: 0 auto;
+    #{&}__paragraph1{
+        font-weight: weight(bold);
+        &:hover{
+            color: map-get($text-colors,"pink");
+        }
+    }
+    #{&}__paragraph2{
+        @extend .main__paragraph1;
+        &:hover{
+            color: map-get($text-colors, "red" );
+        }
+    }
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+.light{
+    @include theme($light-theme:false);
+}

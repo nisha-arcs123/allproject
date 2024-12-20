@@ -1,0 +1,684 @@
+.roboto-thin {
+  font-family: "Roboto", system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", system-ui;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", system-ui;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", system-ui;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", system-ui;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", system-ui;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", system-ui;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", system-ui;
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  margin: 0px;
+}
+
+.outer-div {
+  width: 100%;
+  font-family: "Roboto";
+  margin: 0px;
+  background-color: #F5F5F5;
+}
+.outer-div .banner {
+  position: relative;
+}
+.outer-div .bannerImg {
+  background-image: url("./images/banner_config.png");
+  height: 773px;
+  background-size: cover;
+  position: relative;
+  border-top: 1px solid #D7D7D7;
+}
+.outer-div .mobileBanner {
+  display: none;
+}
+.outer-div .content-box {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  height: 170px;
+  margin: auto;
+  right: 10.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 267px;
+}
+.outer-div .content-box p {
+  font-size: 36px;
+  font-weight: bold;
+}
+.outer-div .content-box .btndiv {
+  padding: 18px 155px;
+  color: white;
+  background-color: #00A427;
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-top: 2px;
+  box-shadow: 0 4px 8px 0;
+  margin-right: -10px;
+}
+.outer-div .content-box .btndiv img {
+  margin-right: 4px;
+}
+.outer-div .content-box .btndiv span {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 4px;
+}
+.outer-div .arrow-outerdiv-container {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  gap: 45px;
+  margin-left: 16.2%;
+  margin-top: -2.8%;
+}
+.outer-div .arrow-outerdiv-container .arrow {
+  width: 27%;
+  border: 1px solid #D7D7D7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 4%;
+  height: 84px;
+  border-right: none;
+  background-color: white;
+  z-index: 1;
+  position: relative;
+}
+.outer-div .arrow-outerdiv-container .arrow img {
+  background-color: #00A427;
+  border-radius: 50% 50%;
+  position: absolute;
+  padding: 10px;
+  margin-left: -21px;
+  box-shadow: 2px 2px 2px #D7D7D7;
+}
+.outer-div .arrow-outerdiv-container .arrow p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto";
+  padding-left: 30px;
+}
+.outer-div .arrow-outerdiv-container .arrow.arrow1::after {
+  position: absolute;
+  height: 100%;
+  content: "";
+  width: 35px;
+  right: -35px;
+  background: url(images/arrow.svg);
+  background-size: 100% 100%;
+}
+.outer-div .arrow-outerdiv-container .arrow.arrow2::after {
+  position: absolute;
+  height: 100%;
+  content: "";
+  width: 35px;
+  right: -35px;
+  background: url(images/arrow.svg);
+  background-size: 100% 100%;
+}
+.outer-div .arrow-outerdiv-container .arrow.arrow3::after {
+  position: absolute;
+  height: 100%;
+  width: 35px;
+  right: -35px;
+  content: "";
+  background: url(images/arrow.svg);
+  background-size: 100% 100%;
+}
+.outer-div .container {
+  width: 78%;
+  margin: auto;
+  margin-left: 15%;
+  margin-top: 55px;
+}
+.outer-div .container .certificates {
+  display: flex;
+  background: transparent;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.outer-div .container .certificates .div {
+  width: 19.5%;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 40px 25px 5px 25px;
+}
+.outer-div .container .certificates .div .img1 {
+  width: 110px;
+  height: 110px;
+  margin: auto;
+  overflow: hidden;
+  background: url("images/certi.svg");
+  background-position: center;
+}
+.outer-div .container .certificates .div .img2 {
+  width: 110px;
+  height: 110px;
+  margin: auto;
+  overflow: hidden;
+  background: url("images/certi2.svg");
+  background-position: center;
+}
+.outer-div .container .certificates .div .img3 {
+  width: 110px;
+  height: 110px;
+  margin: auto;
+  overflow: hidden;
+  background: url("images/certi3.svg");
+  background-position: center;
+}
+.outer-div .container .certificates .div .img4 {
+  width: 110px;
+  height: 110px;
+  margin: auto;
+  overflow: hidden;
+  background: url("images/icon (2).svg");
+  background-position: center;
+}
+.outer-div .container .certificates .div h3 {
+  font-size: 18px;
+  padding-top: 27px;
+  margin: 0px;
+}
+.outer-div .container .certificates .div p {
+  padding-top: 16px;
+  font-size: 17px;
+  opacity: 0.3;
+  padding-bottom: 58px;
+  margin: 0px;
+  font-weight: bold;
+}
+.outer-div .container .certificates .div:hover {
+  background-color: #00A427;
+  color: white;
+  border: none;
+}
+.outer-div .container .certificates .div:hover p {
+  opacity: 1;
+}
+.outer-div .container .certificates .div:hover .img1 {
+  background: url("images/icon (1).svg");
+  opacity: 1;
+  background-position: center;
+}
+.outer-div .container .certificates .div:hover .img2 {
+  background: url("images/Vector (1).svg");
+  background-position: center;
+}
+.outer-div .container .certificates .div:hover .img3 {
+  background: url("images/icon (4).svg");
+  background-position: center;
+}
+.outer-div .container .certificates .div:hover .img4 {
+  background: url("images/Vector (5).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.outer-div .container .comment-container {
+  margin-top: 63px;
+  margin-bottom: 140px;
+}
+.outer-div .container .comment-container .head {
+  display: flex;
+  justify-content: space-between;
+}
+.outer-div .container .comment-container .head .ptag {
+  width: 100%;
+}
+.outer-div .container .comment-container .head .ptag p {
+  margin-bottom: 0px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.7;
+  margin-left: 145px;
+}
+.outer-div .container .comment-container .head .btn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: -43px;
+}
+.outer-div .container .comment-container .head .btn .prev, .outer-div .container .comment-container .head .btn .next {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19);
+}
+.outer-div .container .comment-container .inner_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+.outer-div .container .comment-container .inner_div .comment {
+  background-color: #FFFFFF;
+  padding: 20px;
+  width: 29.5%;
+  margin-top: 30px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.11);
+}
+.outer-div .container .comment-container .inner_div .comment .star {
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+.outer-div .container .comment-container .inner_div .comment .div4 {
+  margin-top: 15px;
+}
+.outer-div .container .comment-container .inner_div .comment .div4 h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.outer-div .container .comment-container .inner_div .comment .div4 p {
+  font-size: 18px;
+  opacity: 0.5;
+}
+.outer-div .container .comment-container .inner_div .comment .postedby {
+  display: flex;
+  margin-top: 95px;
+  align-items: center;
+  font-size: 14px;
+}
+.outer-div .container .comment-container .inner_div .comment .postedby img {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+}
+.outer-div .container .comment-container .inner_div .comment .postedby span {
+  margin-left: 15px;
+  opacity: 0.5;
+}
+.outer-div .imgContainer {
+  margin-top: 180px;
+  background-color: #3E3E3F;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.outer-div .imgContainer .imgContent {
+  position: absolute;
+  bottom: 75px;
+  right: 7%;
+}
+.outer-div .imgContainer .imgContent img {
+  background-size: cover;
+  border: 1px solid #3E3E3F;
+}
+.outer-div .imgContainer .btncontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 55px;
+  right: 48%;
+  gap: 10px;
+}
+.outer-div .imgContainer .btncontainer .div1 {
+  width: 65px;
+  height: 50px;
+  background-color: red;
+  transform: skewX(-30deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer-div .imgContainer .btncontainer .div1 img {
+  width: 30px;
+  padding: 10px;
+}
+.outer-div .imgContainer .btncontainer .div2 {
+  width: 65px;
+  height: 50px;
+  background-color: red;
+  transform: skewX(-30deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer-div .imgContainer .btncontainer .div2 img {
+  width: 55px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .outer-div .bannerImg {
+    display: none;
+  }
+  .outer-div .content-box {
+    display: none;
+  }
+  .outer-div .mobileBanner {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+  }
+  .outer-div .mobileBanner .div img {
+    width: 63%;
+    height: 100%;
+  }
+  .outer-div .mobileBanner .contentDiv {
+    position: absolute;
+    top: 34.5%;
+    right: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .outer-div .mobileBanner .contentDiv p {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  .outer-div .mobileBanner .contentDiv .btndiv {
+    padding: 15px 145px;
+    color: white;
+    background-color: #00A427;
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-top: 2px;
+    box-shadow: 0 4px 8px 0;
+    margin-right: -10px;
+  }
+  .outer-div .mobileBanner .contentDiv .btndiv img {
+    margin-right: 4px;
+  }
+  .outer-div .mobileBanner .contentDiv .btndiv span {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 4px;
+  }
+  .outer-div .mobileBanner .color1, .outer-div .mobileBanner .color2 {
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgb(0, 211, 255), rgb(255, 255, 255));
+    opacity: 0.3;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .outer-div .mobileBanner .color1 {
+    left: -7%;
+    top: -13%;
+  }
+  .outer-div .mobileBanner .color2 {
+    right: 0%;
+    top: 18%;
+  }
+  .outer-div .mobileBanner .setting1 {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 4%;
+    right: 38%;
+  }
+  .outer-div .mobileBanner .setting2 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 4%;
+    left: -2%;
+  }
+  .outer-div .mobileBanner .setting3 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
+  }
+  .outer-div .arrow-outerdiv-container .arrow p {
+    font-size: 17px;
+  }
+  .outer-div .imgContainer {
+    margin-top: 10px;
+  }
+  .outer-div .imgContainer .imgContent img {
+    width: 800px;
+  }
+  .outer-div .container .certificates .div {
+    width: 40%;
+    margin: 10px;
+  }
+  .outer-div .container .comment-container .inner_div .comment {
+    width: 40%;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .outer-div .mobileBanner {
+    display: block;
+    height: auto;
+  }
+  .outer-div .mobileBanner .div {
+    justify-content: center;
+    display: flex;
+  }
+  .outer-div .mobileBanner .div img {
+    width: 75%;
+  }
+  .outer-div .mobileBanner .contentDiv {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+  .outer-div .mobileBanner .contentDiv p {
+    font-size: 32px;
+  }
+  .outer-div .mobileBanner .contentDiv .btndiv {
+    padding: 12px 110px;
+    margin-bottom: 100px;
+  }
+  .outer-div .mobileBanner .color1, .outer-div .mobileBanner .color2 {
+    width: 300px;
+    height: 300px;
+  }
+  .outer-div .arrow-outerdiv-container .arrow p {
+    font-size: 15px;
+  }
+  .outer-div .imgContainer {
+    margin-top: 10px;
+  }
+  .outer-div .imgContainer .imgContent img {
+    width: 600px;
+    height: 600px;
+    border: none;
+  }
+  .outer-div .imgContainer .btncontainer {
+    bottom: 188px;
+    left: 43%;
+  }
+  .outer-div .container .certificates .div {
+    width: 35%;
+  }
+  .outer-div .container .comment-container .head .ptag p {
+    font-size: 25px;
+  }
+  .outer-div .container .comment-container .head .btn .prev, .outer-div .container .comment-container .head .btn .next {
+    height: 0px;
+    width: 40px;
+    font-size: 16px;
+  }
+  .outer-div .container .comment-container .inner_div .comment {
+    width: 40%;
+  }
+  .outer-div .container .comment-container .inner_div .comment .star img {
+    width: 30px;
+    height: 30px;
+  }
+  .outer-div .container .comment-container .inner_div .comment .div1 h3, .outer-div .container .comment-container .inner_div .comment .div2 h3, .outer-div .container .comment-container .inner_div .comment .div3 h3, .outer-div .container .comment-container .inner_div .comment .div4 h3 {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  .outer-div .container .comment-container .inner_div .comment .div1 p, .outer-div .container .comment-container .inner_div .comment .div2 p, .outer-div .container .comment-container .inner_div .comment .div3 p, .outer-div .container .comment-container .inner_div .comment .div4 p {
+    font-size: 17px;
+  }
+  .outer-div .container .comment-container .inner_div .comment .postedby {
+    font-size: 15px;
+  }
+  .outer-div .container .comment-container .inner_div .comment .postedby img {
+    width: 20px;
+  }
+  .outer-div .container .comment-container .inner_div .comment .postedby span {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .outer-div .mobileBanner .setting2 {
+    width: 77px;
+  }
+  .outer-div .mobileBanner .contentDiv p {
+    font-size: 29px;
+    text-align: center;
+  }
+  .outer-div .mobileBanner .contentDiv .btndiv {
+    padding: 10px 77px;
+  }
+  .outer-div .arrow-outerdiv-container {
+    flex-direction: column;
+  }
+  .outer-div .arrow-outerdiv-container .arrow {
+    width: 80%;
+    margin-bottom: -20px;
+  }
+  .outer-div .arrow-outerdiv-container .arrow p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .outer-div .container .certificates .div {
+    width: 100%;
+  }
+  .outer-div .container .comment-container .inner_div .comment {
+    width: 100%;
+  }
+  .outer-div .container .comment-container .head .ptag p {
+    font-size: 26px;
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+  }
+  .outer-div .container .comment-container .head .btn {
+    display: none;
+  }
+  .outer-div .imgContainer .imgContent {
+    width: 430px;
+    height: 450px;
+  }
+  .outer-div .imgContainer .imgContent img {
+    width: 100%;
+  }
+  .outer-div .imgContainer .btncontainer {
+    bottom: 88px;
+    left: 48%;
+  }
+  .outer-div .imgContainer .btncontainer .div1 {
+    height: 36px;
+  }
+  .outer-div .imgContainer .btncontainer .div1 img {
+    width: 20px;
+    height: 20px;
+  }
+  .outer-div .imgContainer .btncontainer .div2 {
+    height: 36px;
+  }
+  .outer-div .imgContainer .btncontainer .div2 img {
+    width: 40px;
+    height: 20px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .outer-div .mobileBanner .contentDiv p {
+    font-size: 26px;
+    text-align: center;
+  }
+  .outer-div .mobileBanner .contentDiv .btndiv {
+    padding: 10px 77px;
+  }
+  .outer-div .content-box {
+    top: 65%;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */

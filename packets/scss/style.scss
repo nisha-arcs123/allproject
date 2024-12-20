@@ -1,0 +1,572 @@
+
+.outer-div{
+    width: 100%;
+    background-color: #F5F5F5;
+    .img{
+        overflow: hidden;
+        .img-content{
+          color: #FFFFFF;
+          position: absolute;
+          top: 17%;
+          left: 37%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1{
+            font-size: 55px;
+            font-family: 'Roboto';
+            margin-bottom: 10px;
+          }
+          .hr{
+            width: 77%;
+            height: 6px;
+            background-color: #00A427;
+            
+          }
+        }
+        .bottm{
+          top: 40%;
+          left: 47%;
+          font-family: 'Roboto';
+          position: absolute;
+          display: flex;
+          color: #FFFFFF;
+          font-size: 20px;
+          img{
+            color: #FFFFFF;
+            padding: 3px;
+          }
+          p{
+            opacity: 0.8;
+          }
+        }
+    }
+    .container{
+        width: 75%;
+        margin: auto;
+        font-family: 'Roboto';
+
+        .para{
+            font-size: 20px;
+            line-height: 30px;
+            word-spacing: 2px;
+            padding: 15px; 
+            font-weight: light;
+        }
+    }
+}
+
+
+.outer_grid_container{
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    height: auto;
+    padding: 10px 30px 60px 30px;
+    h1{
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        text-transform: uppercase;
+        margin: 30px;
+        opacity: 0.9;
+    }
+    .inner-container-grid{
+      display: flex;
+      justify-content: center;
+    }
+    .grid_container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        // grid-column-gap: 30px;
+        // grid-row-gap: 30px;
+        
+        gap: 25px;
+        .item1,.item2,.item3,.item4,.item5,.item6{
+          width: 100%;
+          background-repeat: no-repeat;
+          position: relative;
+          overflow: hidden;
+
+          .grid-img{
+            width: 100%;
+          }
+          .txt{
+            opacity: 0;
+            font-size: 25px;
+            color: #FFFF;
+            font-weight: 500;
+            text-transform: capitalize;
+            display: flex;
+            top: 30%;
+            position: absolute;
+            left: 24%;
+            text-decoration: underline;
+          }
+
+          &:hover .overley{
+              // position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 78.5%;
+              background: rgba(0, 170, 50, 0.7);
+              border-radius: 10px;
+          }
+          &:hover .txt{
+            opacity: 1;
+          }
+          .smalldiv{
+            margin-top: 0px;
+            p{
+                font-size: 28px;
+                font-weight: 500;
+                margin-top: 12px;
+                margin-bottom: 10px;
+            }
+            .div{
+                display: flex;
+                align-items: center;
+                margin-bottom: 0px;
+                span{
+                    opacity: 0.5;
+                    margin-left: 16px;
+                    font-size: 25px;
+                }
+            }
+        }
+        }
+    }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 15%;
+  margin-left: 15px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  border-radius: 30px;
+  max-width: 1000px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 50px;
+  // font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  width: auto;
+  padding: 20px 24px;
+  margin-top: 0px;
+  color: white;
+  // font-weight: bold;
+  font-weight: 300;
+  font-size: 30px;
+  transition: 0.6s ease;
+  // border-radius: 0 3px 3px 0;
+  margin: -200px;
+  user-select: none;
+  background-color: #00A427;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #06f03d;
+}
+
+
+img {
+  margin-bottom: -4px;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+}
+
+
+
+.form-input1,.form-input2,.form-input3,.form-input4,.form-input5,.form-input6,.form-input7,.form-input8,.form-input9 {
+    position: relative;
+  }
+  
+  .outer-form{
+    background-color: #FFFFFF;
+    margin-top: 39px;
+  .form-div{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:34px;
+    padding: 37px 51px 34px 51px;
+    input{
+      font-size: 18px;
+      width: 91%;
+      height: 42px;
+      border: 2px solid #6C6C6C;
+      padding-left: 54px;
+    }
+    img{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 0px 1.5px 1.5px 1.5px;
+      }
+    .input-span{
+      width: 1px;
+      height: 21px;
+      background-color: #161515;
+      left: 45px;
+      top: 11px;
+      opacity: 0.5;
+      position: absolute;
+    }
+    ::placeholder{
+      color: #C4C4C4;
+      font-size: 16px;
+      font-weight: 600;
+      margin-left: 10%;
+    }
+    textarea{
+      // color: #C4C4C4;
+      font-size: 16px;
+      font-weight: 300;
+      width: 96%;
+      border: 2px solid #6C6C6C;
+      margin-bottom: 34px;
+      padding-left: 53px;
+      padding-top: 11px;
+      
+    }
+    .form-input9{
+      grid-column: 1 / span 2 ;
+      width: inherit;
+      height: 70px;
+      margin-bottom: 34px;
+    }
+  }
+  .last{
+    display: flex;
+    justify-content: space-between;
+   padding-right: 34px;
+    p{
+        padding-top: 46px;
+        font-size: 18px;
+        padding-left: 44px;
+        .last-span{
+        font-weight: bold;
+        }
+    }
+  }  
+  button{
+    margin-right: 10px;
+    margin-top: 34px;
+    padding:4px 2px 4px 2px;
+    margin-bottom: 33px;
+    width: 407px;
+    height: 56px;
+    background-color:#00A427;
+    color: #FFFFFF;
+    border: 1px solid #00A427;
+    font-size: 16px;
+    box-shadow: 0px 3px 6px gray;
+    cursor: pointer;
+  } 
+  
+  }
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 1810px) {
+    .outer-div {
+      .img{ 
+        .img-content{
+          top: 23%;
+          left: 31%;
+        }
+        .bottm {
+          top: 61%;
+          left: 41%;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 1400px) {
+    .outer-div{
+      .container{
+        .img{
+          .img-content{
+            left: 29%;
+          }
+        }
+        .para{
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+
+
+    .outer_grid_container {
+      h1{
+        font-size: 36px;
+      }
+      .grid_container {
+      grid-template-columns: auto auto;
+      .item1,.item2,.item3,.item4,.item5,.item6 {
+        .smalldiv{ 
+          p,span{
+            font-size: 27px;
+            }
+            .div{
+              span{
+                font-size: 25px;
+              }
+             } 
+          }
+        }
+      }
+    }
+}
+
+
+
+  @media screen and (max-width: 1200px) {
+     .outer-div{
+      .container{
+        width: 90%;
+        h1{
+          font-size: 33px;
+        }
+        .para{
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+      .img{
+        .img-content{
+          left: 27%;
+          h1{
+            left: 0%;
+            position: relative;
+            font-size: 50px;
+          }
+        }
+        .bottm{
+          left: 38%;
+        }
+      }
+    }
+
+    .outer-form{
+      .form-div{
+        display: block;
+        input,textarea{
+          padding-bottom: 0px;
+          margin-top: 30px;
+        }
+        .input-span,img{
+          top: 42px;
+        }
+        textarea{
+          width: 91%;
+        }
+      }
+      .last{
+        display: block;
+        button{
+          width: 100%;
+          margin-left: 17px;
+        }
+      }
+    }
+.container{
+    .grid_container {
+      .item1,.item2,.item3,.item4,.item5,.item6 {
+        .smalldiv{ 
+          p,span{
+            font-size: 26px;
+            }
+            .div{
+              span{
+                font-size: 23px;
+              }
+             } 
+          }
+        }
+      }
+  }
+}
+
+
+  @media screen and (max-width: 850px) {
+    .outer-div{ 
+      .container {
+        width: 100%;
+        h1{
+          font-size: 30px;
+        }
+        .para {
+        font-size: 14px;
+        line-height: 20px;
+        }
+      }
+      .img{
+        .img-content{
+          left: 26%;
+          h1{
+            font-size: 40px;
+          }
+        }
+        .bottm{
+          left: 30%;
+          font-size: 19px;
+        }
+       }
+      }
+
+      .outer_grid_container {
+        .grid_container {
+        grid-template-columns:auto;
+        }
+    }
+
+
+    .outer-form {
+      .form-div {
+        textarea {
+          width: 91%;
+        }
+      }
+    }
+
+.container{
+    .grid_container {
+      .item1,.item2,.item3,.item4,.item5,.item6 {
+        .smalldiv{ 
+          p,span{
+            font-size: 24px;
+            }
+            
+          }
+        }
+      }
+}}
+
+  @media screen and (max-width: 600px) {
+    .outer-div {
+      .img{ 
+        .img-content{ 
+          left: 17%;
+          h1 {
+            font-size: 35px;
+          }
+        }
+      }
+
+
+      .container{
+        width: 100%;
+        .grid_container {
+          .item1,.item2,.item3,.item4,.item5,.item6{
+            .smalldiv{ 
+              p{
+                font-size: 23px;
+                }
+               .div{
+                span{
+                  font-size: 21px;
+                }
+               } 
+              }
+            }
+          }
+      }
+      
+    }
+  }

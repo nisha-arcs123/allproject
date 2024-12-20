@@ -1,0 +1,73 @@
+/* body{
+    margin: 0;
+    padding: 0;
+}
+
+
+section{
+    width: 100%;
+    height: 650px;
+    background: url(Img\ Lipstick\ \(2\).svg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.txt{
+    opacity: 0;
+    text-align: center;
+    font-size: 50px;
+    color: #FFFF;
+    text-transform: capitalize;
+    display: flex;
+    top: 25%;
+    position: absolute;
+    left: 50%;
+    text-decoration: underline;
+}
+section:hover .overley{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 78, 0.5);
+}section:hover .txt{
+    opacity: 1;
+} */
+
+
+.container{
+    width: 80%;
+    margin: auto;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    
+}
+.div1, .div2 ,.div3 ,.div4,.div5{
+    width: 300px;
+    height: 300px;  
+    background-color: rgb(193, 197, 197); 
+    margin-right: 10px;    
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3{
+    font-size: 30px;
+    color: brown;
+    background-color: rgb(236, 141, 16);
+    text-transform: uppercase;
+}
+p{
+    font-size: 18px;
+}
+
+@media (max-width: 800px) {
+    .container{
+        flex-direction:column;
+    }
+}
